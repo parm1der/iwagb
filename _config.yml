@@ -1,0 +1,8 @@
+
+#Site settings
+title: IWAGB - Indian Workers Assocation (G.B)
+description: IWAGB - Indian Workers Assocation (G.B)
+baseurl: ""
+
+#Build Settings
+permalink: /:title/

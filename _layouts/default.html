@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <base href="">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}The Indian Workers Association (IWA) in Great Britain is for those people from the Indian sub-continent who loved their country and actively fought for the release of India from British colonialism. At national level, the IWA campaign stands against all kinds of racism and they offer a service to members on immigration, social services, housing benefits, language, policing and crime matters as well an encouraging the membership of unions.{% endif %}">
+    <meta name="keywords" content="{{page.keywords}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS / fonts etc -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!--Insert Google Tag Manager -->
+    
+    <body>
+        
+        <div id="page-container">
+        <div id="content-wrap">
+            <header class="container-fluid">
+                <div class="row">
+                     <nav class="col-sm-5 text-right">
+                        <p {%if page.url == "/gallery.html" %}class="current" {% endif %}>{%if page.url != "/gallery.html" %}<a href="playlists">{% endif %}playlists{%if page.url != "/playlists.html" %}</a>{% endif %}</p>
+                        <p {%if page.url == "/ContactUs.html" %}class="current" {% endif %}>{%if page.url != "/contactus.html" %}<a href="blog">{% endif %}blog{%if page.url != "/blog.html" %}</a>{% endif %}</p>
+                        <p {%if page.url == "/about.html" %}class="current" {% endif %}>{%if page.url != "/about.html" %}<a href="about">{% endif %}about{%if page.url != "/about.html" %}</a>{% endif %}</p>
+                    </nav>
+                </div>
+            </header>
+            <content>
+
+                {{ content }}
+
+            </content>
+        </div>
+        <footer class="container-fluid">
+            <div class="row">
+                <p class="col-sm-4"> &copy; 2020 Indian Workers Association (G.B) </p>
+            
+            </div>
+        </footer>
+        </div>
+    
+    </body>
